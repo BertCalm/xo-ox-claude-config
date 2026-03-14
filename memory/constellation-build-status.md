@@ -4,7 +4,7 @@ description: XOrphica Family Constellation fast-track build progress — 7 sub-p
 type: project
 ---
 
-## Constellation Fast Track Build — Status as of 2026-03-14
+## Constellation Fast Track Build — ✅ COMPLETE (2026-03-14)
 
 **Spec:** `~/Documents/GitHub/XO_OX-XOmnibus/docs/superpowers/specs/2026-03-14-constellation-fast-track-design.md`
 
@@ -17,25 +17,20 @@ type: project
 | SP5 | XOttoni (OTTONI) | ~/Documents/GitHub/XOttoni/ | ✅ Scaffold builds (AU+Standalone) | `7b14b7f` |
 | SP6 | XOlé (OLE) | ~/Documents/GitHub/XOle/ | ✅ Scaffold builds (AU+Standalone) | `7c6fadc` |
 | SP7.1 | 5 XOmnibus adapters | XO_OX-XOmnibus | ✅ Committed (10 files, 764 LOC) | `cd6a007` |
-| SP7.2 | CMakeLists integration | XO_OX-XOmnibus | **NEXT** — add .cpp sources to XOmnibus CMakeLists |  |
-| SP7.3 | Macro bleed + coupling | XO_OX-XOmnibus | Queued |  |
-| SP7.4 | 250 presets | All repos | Queued (50 per engine) |  |
-| SP7.5 | Docs + QA + UI upscale | All repos | Queued |  |
+| SP7.2 | CMakeLists integration | XO_OX-XOmnibus | ✅ Complete (AU build + auval PASS) | `e751819` |
+| SP7.3 | Macro bleed + coupling | XO_OX-XOmnibus | ✅ Complete (LFOToPitch+AmpToFilter+EnvToMorph + processFamilyBleed) | `b991268` |
+| SP7.4 | 250 presets | All repos | ✅ Complete (112-117/engine, 100% DNA, 7 moods incl. Family) | prior session |
+| SP7.5 | Docs + QA + UI upscale | All repos | ✅ Complete (D001/D005/D006 + 2 audio bugs + accent colors + synthesis guides) | `508f867` |
 
-**SP7.2 specifically needs:**
-- Add 5 new .cpp files to XOmnibus CMakeLists.txt target_sources
-- Add Constellation engine entries to CLAUDE.md engine table (5 new rows)
-- Update engine catalog doc with Constellation engines
-- Verify XOmnibus builds with all 5 new adapters linked
-
-**Per-engine deep build-out remaining (each engine):**
-- Full instrument gallery presets (waveguide tuning per instrument)
-- FX chain implementation (currently just master reverb)
-- Macro wiring (currently skeleton — need full param → DSP routing)
-- 50 .xometa presets per engine
-- auval verification
-- CPU profiling
+**SP7.5 COMPLETE (2026-03-14):**
+- Accent colors + prefixForEngine table added to XOmnibusEditor.h (`e20a9d8`)
+- CLAUDE.md updated: 31 engines, 2,369 presets, 7 moods, seance note (`887b692`)
+- 5 synthesis guides written in XO_OX voice (`5826192`)
+- D001 (velocity→extIntens), D005 (drift floor 0.05→0.005 Hz), D006 (mod wheel+aftertouch) applied to all 5 engines
+- OTTONI: removed duplicate df.process() call (double-damping bug)
+- OLE: restricted voice stealing to aunt pool (slots 0-11); husband slots no longer activated by steal
+- auval PASS confirmed post-fix
 
 **Why:** User approved full autonomous build on 2026-03-14.
 
-**How to apply:** Resume with "continue Constellation build" — SP7.2 is the immediate next step. After that, deep DSP build-out per engine, then presets, then final QA.
+**Next:** Seance round for the 5 Constellation engines (OHM/ORPHICA/OBBLIGATO/OTTONI/OLE) — `/synth-seance` for each.

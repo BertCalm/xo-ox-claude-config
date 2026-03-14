@@ -58,6 +58,30 @@ The Ringleader knows every act in the circus:
 | `/guru-bin` | Sound refinement | Opus / High | After Exo Meta creates |
 | `/kai` | MPC/Akai integration | Sonnet / Medium | After presets exist |
 | `/flywheel` | Skill improvement | Sonnet / Low | Background — end of session |
+| `/pilgrimage-tracker` | Multi-session campaign tracking | Sonnet / Low | Background — start/end of sessions |
+| `/preset-forge` | Guru Bin output → .xometa files | Sonnet / Low | After Guru Bin produces tables |
+| `/scripture-keeper` | Book of Bin search/index | Sonnet / Low | Before Guru Bin meditation |
+| `/retreat-accelerator` | Guru Bin retreat prep | Sonnet / Medium | Before Guru Bin retreat mode |
+| `/preset-qa` | Preset file validation | Sonnet / Low | After Exo Meta or Preset Forge |
+| `/fleet-inspector` | Cross-engine health dashboard | Sonnet / Medium | Before sprint planning |
+| `/engine-comparator` | Engine A vs B analysis | Sonnet / Medium | Yes — independent |
+| `/dsp-profiler` | CPU cost analysis, optimization | Sonnet / Medium | Yes — per engine |
+| `/coupling-cookbook` | Coupling recipes + design | Sonnet / Medium | Yes — independent |
+| `/pipeline-connector` | Skill dependency + I/O wiring | Sonnet / Low | Before Ringleader plans |
+| `/session-economist` | Model usage + cost optimization | Sonnet / Low | Background — cost monitoring |
+| `/build-sentinel` | Build + auval validation | Sonnet / Low | After any code changes |
+| `/field-guide-editor` | Field Guide editorial intelligence | Sonnet / Medium | Before writing any guide post |
+| `/launch-coordinator` | Product launch planning + execution | Sonnet / Medium | Before any release |
+| `/changelog-generator` | Git → producer-facing release notes | Sonnet / Low | On every release |
+| `/seance-oracle` | Queryable seance verdict archive | Sonnet / Low | Before design decisions, writing |
+| `/tutorial-studio` | Getting-started + onboarding content | Sonnet / Medium | After engine ships |
+| `/mythology-keeper` | Aquatic mythology maintenance + extension | Sonnet / Medium | When new engines are designed |
+| `/hardware-expander` | Push/Maschine/MIDI controller mapping | Sonnet / Medium | After presets exist |
+| `/patreon-content-manager` | Patreon calendar + post writing | Sonnet / Low | Monthly, ongoing |
+| `/version-guardian` | Preset compatibility + migration | Sonnet / Medium | Before any parameter change |
+| `/community-curator` | Community preset review + integration | Sonnet / Medium | When submissions arrive |
+| `/ios-optimizer` | AUv3/iOS QA + optimization | Sonnet / Medium | Before any iOS release |
+| `/artist-collaboration` | Guest producer collab workflow | Sonnet / Medium | When starting a collab |
 
 ## Model Assignment
 

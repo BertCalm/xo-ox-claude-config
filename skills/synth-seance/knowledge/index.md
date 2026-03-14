@@ -14,10 +14,12 @@
 | D005 | An Engine That Cannot Breathe Is a Photograph | Schulze, Buchla, Moog | [D005](doctrines/D005-engines-must-breathe.md) |
 | D006 | Expression Input Is Not Optional | Vangelis, Moog, Smith | [D006](doctrines/D006-expression-not-optional.md) |
 
-## Visions (8)
+## Visions (10)
 
 | ID | Vision | Ghost | Engine | File |
 |----|--------|-------|--------|------|
+| V009 | Per-voice spatial positioning by instrument — Banjo left, Fiddle right | Tomita | OHM | [V009](visions/V009-ohm-per-voice-pan.md) |
+| V010 | Aftertouch → COMMUNE routing — leaning into a note merges the family | Vangelis | OHM | [V010](visions/V010-ohm-aftertouch-commune.md) |
 | V001 | XVC is the future of drum synthesis | Kakehashi | Onset | [V001](visions/V001-xvc-future-of-drums.md) |
 | V002 | Zero-Audio Paradigm: synthesis without sound | Schulze | Optic | [V002](visions/V002-zero-audio-paradigm.md) |
 | V003 | Chain Freeze/Unfreeze: live spectral performance | Buchla | Obscura | [V003](visions/V003-chain-freeze-unfreeze.md) |
@@ -36,10 +38,12 @@
 | DB003 | Init patch: immediate beauty vs. blank canvas | Vangelis/Kakehashi vs. Schulze | UNRESOLVED | [DB003](debates/DB003-init-patch-philosophy.md) |
 | DB004 | Expression vs. Evolution: gesture vs. temporal depth | Vangelis vs. Schulze | UNRESOLVED | [DB004](debates/DB004-performance-vs-evolution.md) |
 
-## Blessings (15)
+## Blessings (17)
 
 | ID | Blessing | Ghost | Engine | File |
 |----|----------|-------|--------|------|
+| B017 | Per-Voice Grain Buffer Architecture (16×4 grain cloud) | Pearlman, Buchla, Smith, Tomita | ORPHICA | [B017](blessings/B017-orphica-per-voice-grains.md) |
+| B016 | MEDDLING/COMMUNE Dual-Axis Social Synthesis | Buchla, Moog, Vangelis, Smith, Schulze, Kakehashi | OHM | [B016](blessings/B016-ohm-meddling-commune.md) |
 | B001 | Group Envelope System | Moog, Smith | Orbital | [B001](blessings/B001-orbital-group-envelopes.md) |
 | B002 | XVC Cross-Voice Coupling | Kakehashi, All 8 | Onset | [B002](blessings/B002-onset-xvc.md) |
 | B003 | Leash Mechanism | Buchla, Moog | Ouroboros | [B003](blessings/B003-ouroboros-leash.md) |
@@ -58,10 +62,12 @@
 
 ---
 
-## Seances Held (24 — ALL COMPLETE)
+## Seances Held (25)
 
 | # | Engine | Date | Score | Key Finding |
 |---|--------|------|-------|-------------|
+| 26 | ORPHICA | 2026-03-14 | 8.0/10 | Per-voice 64-grain cloud architecture — B017. Dual-path crossover as spatial filter. D001 half-honored, kBufSize 186ms too short. |
+| 25 | OHM | 2026-03-14 | 7.6/10 | MEDDLING/COMMUNE social synthesis paradigm — B016. Mono voice summing, D001 half-honored (intensity not brightness). |
 | 1 | XOblongBob | 2026-03-14 | 7.x/10 | CuriosityEngine is soul but under-routed |
 | 2 | Obscura | 2026-03-14 | High | Physics IS synthesis (unanimous) |
 | 3 | XOcelot | 2026-03-14 | 6.4/10 | Ecosystem Matrix novel, macros dead |

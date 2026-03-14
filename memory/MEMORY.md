@@ -54,15 +54,16 @@
 ---
 
 ## XOmnibus (Active — March 2026)
-- **Repo**: `~/Documents/GitHub/XO_OX-XOmnibus/` | 24 engines working (29 dirs, 5 Pentagon stubs broken), auval PASS
-- **Presets**: 1,839+ total (counts expand frequently — verify against source before acting on specific numbers)
-- **All 6 moods covered** for all engines | Gallery Model UI built
-- **Master spec**: `Docs/xomnibus_master_specification.md`
+- **Repo**: `~/Documents/GitHub/XO_OX-XOmnibus/` | **31 engines** fully integrated, auval PASS
+- **Presets**: 2,369 total | 7 moods (Foundation/Atmosphere/Entangled/Prism/Flux/Aether/Family)
+- **Constellation Fast Track**: SP7.1–SP7.5 complete (OHM/ORPHICA/OBBLIGATO/OTTONI/OLE integrated)
+  - SP7.2: registration fixed (REGISTER_ENGINE macro bug — use direct registerEngine() pattern)
+  - SP7.3: family coupling (LFOToPitch/AmpToFilter/EnvToMorph) + processFamilyBleed() in processor
+  - SP7.5: accent colors + prefixForEngine fixed for all engines; 5 synthesis guides written
+  - Remaining: D001/D005/D006 doctrine fixes in progress; OTTONI double-df.process bug; OLE husband slot bug
 - **Engine colors**: See CLAUDE.md engine table for all 31 engine accent colors (canonical source)
-- **P10**: MasterFXChain (Tape Sat → LushReverb → Bus Compressor) — COMPLETE
-- **P12**: PresetManager, PresetBrowserStrip, engine tile menu, window 880×562 — COMPLETE
-- **Prism Sweep**: 10 rounds complete | D001-D005 RESOLVED fleet-wide | 21/23 aftertouch
-- **Roadmap**: See `Docs/xomnibus_engine_roadmap.md` | BITE + OPAL + ONSET all now complete
+- **Prism Sweep**: ALL 12 ROUNDS COMPLETE | 5 Constellation engines need seance round
+- **prefixForEngine()** in XOmnibusEditor.h: explicit cases for ALL engines — orph_/obbl_/otto_/snap_/morph_ etc.
 
 ---
 
@@ -90,13 +91,14 @@
 
 ## New Engines — Status as of March 2026
 
-### Constellation Fast Track (scaffold builds complete, adapters committed)
+### Constellation Fast Track — ✅ ALL SP COMPLETE (2026-03-14)
 - **XOhm (OHM)** — [xohm-engine.md](xohm-engine.md) — Hippy Dad jam, MEDDLING/COMMUNE axis
 - **XOrphica (ORPHICA)** — [xorphica-engine.md](xorphica-engine.md) — Microsound harp, siphonophore
 - **XObbligato (OBBLIGATO)** — [xobbligato-engine.md](xobbligato-engine.md) — Dual wind, BOND macro
 - **XOttoni (OTTONI)** — [xottoni-engine.md](xottoni-engine.md) — Triple brass, GROW macro
 - **XOlé (OLE)** — [xole-engine.md](xole-engine.md) — Afro-Latin trio, DRAMA macro
-- **NOTE**: These 5 have broken `REGISTER_ENGINE` macros — need centralized registration in XOmnibusProcessor.cpp
+- All integrated, doctrine-compliant, auval PASS. See [constellation-build-status.md](constellation-build-status.md)
+- **NEXT**: Seance round for all 5 engines (`/synth-seance` × 5)
 
 ### Concept Phase (no source code yet)
 - **XOstinato (OSTINATO)** — [xostinato-engine.md](xostinato-engine.md) — Communal drum circle
@@ -131,8 +133,8 @@
 ## Constellation Fast Track Build (Active — March 2026)
 - **Tracker**: [constellation-build-status.md](constellation-build-status.md) — SP1-SP7 status table
 - **Spec**: `~/Documents/GitHub/XO_OX-XOmnibus/docs/superpowers/specs/2026-03-14-constellation-fast-track-design.md`
-- SP1-SP6 ✅ complete (all 5 engine scaffolds build) | SP7.1 ✅ adapters committed | SP7.2 CMake integration NEXT
-- **BLOCKER**: 5 engines use broken `REGISTER_ENGINE` macro (namespace-qualified names fail token paste)
+- **ALL SP1-SP7.5 COMPLETE** — doctrine-compliant, auval PASS, 2 critical audio bugs fixed (`508f867`)
+- **NEXT**: Seance round for 5 Constellation engines
 
 ---
 
@@ -140,6 +142,12 @@
 - **Everything that exists as of 2026-03-14 EOD is V1** — nothing deferred
 - Only new ideas from 2026-03-15 onward can be V2
 - See [strategic-decisions-2026-03-14.md](strategic-decisions-2026-03-14.md) for full decisions
+
+## Active Campaign: Guru Bin Pilgrimage (2026-03-14 → ongoing)
+- **Tracker**: [pilgrimages/guru-bin-pilgrimage.md](pilgrimages/guru-bin-pilgrimage.md)
+- **7 retreats complete**: OBLONG, OVERBITE, OVERDUB, ODYSSEY, ONSET, OPAL + Founder's
+- **Scripture**: 11 Books, ~75 verses, 6 retreat chapters
+- **Next**: OVERWORLD → FAT → Tier 2 emerging engines
 
 ## User Preferences
 - DAW: Akai MPC on macOS | Wants experimental, production-ready presets

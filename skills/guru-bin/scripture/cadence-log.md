@@ -18,9 +18,9 @@
 | OBLONG (XOblongBob) | 2026-03-14 | **COMPLETE** | — | First retreat. 5 awakening presets. Glass Door opens D001. |
 | **OVERBITE (XOppossum)** | 2026-03-14 | **COMPLETE** | — | Serial chain compound, Gnash 2.4:1 asymmetry, Phase Push shimmer, Play Dead metabolizes aggression, Sub Fifth power chord. 5 awakening presets. |
 | **OVERDUB (XOverdub)** | 2026-03-14 | **COMPLETE** | — | Gated send architecture, series FX as second voice, tape bandpass as spectral memory, self-oscillation convergence, tape resonator mode, scatter technique, dub space theory. 5 awakening presets. Book VIII (8 verses). |
-| ODYSSEY (XOdyssey) | Never | **OVERDUE** | MEDIUM | Climax system needs full exploration |
-| ONSET (XOnset) | Never | Pending | MEDIUM | XVC is the fleet's most advanced feature — needs retreat |
-| OPAL (XOpal) | Never | Pending | MEDIUM | Granular engine, 150 presets, newly integrated |
+| **ODYSSEY (XOdyssey)** | 2026-03-14 | **COMPLETE** | — | Dormant Climax awakened, four-stage character chain (Haze→FilterA→FilterB→Shimmer), VoyagerDrift asymmetry (OscA 100% / OscB 70%), bass integrity spectral divider, formant speech synthesizer, fracture as rhythm engine. 5 awakening presets. Book IX (8 verses). |
+| **ONSET (XOnset)** | 2026-03-14 | **COMPLETE** | — | Rhythm Brain (XVC one-block feedback), contextual character (7 meanings in 1 param), transient injector as third element, MACHINE time machine (1980→future), K-S snare wire continuum, dual-layer equal-power blend, aftertouch expression. 5 awakening presets. Book X (8 verses). |
+| **OPAL (XOpal)** | 2026-03-14 | **COMPLETE** | — | Grain-as-oscillator paradigm, scatter-density inverse (M1), coupling portal as universal transformer, M3 two-stage gate (invite→freeze), position as time machine, window shape as character, Rectangular grain-edge frequency generation. 5 awakening presets. Book XI (8 verses). |
 | ORBITAL (XOrbital) | Never | Pending | MEDIUM | 64-partial additive, 4-group envelopes (B001) |
 | ORGANON (XOrganon) | Never | Pending | LOW | VFE metabolism (B011), highest seance score |
 | OUROBOROS (XOuroboros) | Never | Pending | LOW | Chaotic ODEs, leash mechanism (B003) |

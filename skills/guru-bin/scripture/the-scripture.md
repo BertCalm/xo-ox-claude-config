@@ -368,8 +368,103 @@
 
 ---
 
+## Book IX: The Nautilus Verses
+
+*Received during the ODYSSEY Retreat, 2026-03-14. The Flock traveled to XOdyssey and discovered the dormant Climax, the four-stage character chain, and the drift orchestra.*
+
+### Oscillator Verse 9: The Supersaw Asymmetric Drift
+> Seven supersaw voices detuned ±50 cents create a static wall. Add VoyagerDrift at 0.8 depth and the wall becomes an orchestra — each voice wanders independently at ±15 cents, with OscB at 70% of OscA's drift. At full settings, 14 voices span ±65 cents — an evolving field that never repeats. Drift transforms quantity into quality.
+
+**Application**: Every ODYSSEY supersaw preset should have drift depth ≥ 0.3. Without drift, the supersaw is impressive. With drift, it is alive.
+
+### Filter Psalm 9: The Four-Stage Character Chain
+> Haze → FilterA → FilterB → Shimmer: ADD warmth → SUBTRACT spectrum → ADD speech → ADD harmonics. Each stage operates on the output of the previous. The chain IS the engine's soul. Swapping any two stages produces a different and inferior result.
+
+**Application**: Set each stage intentionally. Haze provides material for FilterA. FilterB speaks with what remains. Shimmer brightens what FilterB pronounces.
+
+### Modulation Sutra 11: The Breathing Instability
+> TidalPulse (sin²) is rhythmic comfort. VoyagerDrift (xorshift RNG) is random unease. Together: the sound has both a heartbeat and a nervous system. The filter breathes while the pitch wanders. This is breathing instability — the combination that makes ODYSSEY pads feel alive.
+
+**Application**: Every ODYSSEY pad: tidalDepth ≥ 0.1 AND driftDepth ≥ 0.15. Tidal anchors; drift unsettles.
+
+### Modulation Sutra 12: The Climax S-Curve
+> Hermite smoothstep (3t²−2t³) is the mathematical model of emotional climax: slow anticipation, rapid transformation, gentle arrival. Applied to JOURNEY, it blooms shimmer (+40%), reverb (+25%), chorus (+20%), spread (+30%) simultaneously. The listener hears one unified transformation, not four parameter changes. The Climax is ODYSSEY's heart.
+
+**Application**: Every journey preset must label JOURNEY clearly. "Sweep JOURNEY for full transformation." The Climax is discoverable only if the preset tells the producer to look.
+
+### Coupling Gospel 8: The Bass Integrity Divider
+> A hardwired 110 Hz Butterworth HPF before the FX chain splits the spectrum: sub passes dry, everything above enters the FX chain. The sub stays tight; the overtones swim in space. When coupling with bass engines, ODYSSEY won't compete for sub-bass — its fundamentals are pre-filtered.
+
+**Application**: Couple ODYSSEY freely with bass-heavy engines. The 110 Hz divider prevents sub-bass mud architecturally.
+
+### Stewardship Canon 9: The 24-Voice Reality Check
+> 24 voices × full supersaw + dual filters + fracture = the most CPU-expensive voice in the fleet. No musical scenario requires all 24. Bass: 1-2. Lead: 2-4. Pad: 6-8. Dense chord: 10-12. A per-preset voice clamp gifts 50-75% of voice CPU back.
+
+**Application**: Set voice count to actual need. ODYSSEY's per-voice cost is the fleet's highest.
+
+### Master Truth 8: The Journey Preset
+> A journey preset is not a snapshot — it is a STORY with three acts. Familiar (Journey 0-0.3), Transitional (0.3-0.75), and Alien (0.75-1.0). The Climax handles the final transformation. Design with three characters; label the transformation.
+
+**Application**: Journey presets must include performance instructions. The Climax exists — it just needs someone to sweep the macro.
+
+### Expression Truth 4: The Unused Mod Matrix
+> ODYSSEY's 8-slot mod matrix (37×37 routing) averages 2-3 slots used in factory presets. Velocity→amp, LFO1→filter. The matrix can route aftertouch→shimmer, modwheel→formant, drift→fracture. ODYSSEY's expression potential is an order of magnitude beyond what any factory preset demonstrates.
+
+**Application**: Every preset: ≥ 4 mod matrix slots. The matrix is what separates a preset from an instrument.
+
+---
+
+## Book X: The Surface Splash Verses
+
+*Received during the ONSET Retreat, 2026-03-14. The Flock traveled to the drum engine and discovered the rhythm brain, the contextual character, and the transient that IS the drum.*
+
+### Oscillator Verse 10: The 808 Pitch Sweep
+> The TR-808 kick's identity lives in 5 milliseconds: a 48-semitone descent from click to sub-bass thud. The `snap` parameter controls both depth and speed. At snap 1.0, the kick is a gunshot that descends into thunder. The 808 is not an oscillator — it is a TRAJECTORY.
+
+**Application**: Kick presets need snap ≥ 0.3 to cut through a mix. The exception: ambient where the kick should be felt, not heard.
+
+### Filter Psalm 10: The Contextual Character
+> The `character` parameter is seven parameters disguised as one. In BridgedT it is saturation. In NoiseBurst it is noise color. In Metallic it is pulse width. In FM it is modulation index. In Modal it is inharmonicity. In K-S it is snare wire probability. In PhaseDist it is DCW depth. When MACHINE sweeps blend, character changes in KIND, not just degree.
+
+**Application**: At blend 0.5, character simultaneously controls BOTH layers. A single sweep performs two parallel timbral transformations.
+
+### Modulation Sutra 13: The One-Block Feedback Loop
+> XVC operates on one-block latency: voice peaks from block N modulate block N+1. Voices LISTEN to each other. Kick brightens snare, snare tightens hats. The kit develops personality from interaction. After 4 bars with MUTATE, no two passes sound identical.
+
+**Application**: XVC global 0.3-0.5 for musical interaction. Above 0.5, coupling becomes audible. Below 0.3, it's subliminal — felt not heard.
+
+### Modulation Sutra 14: The Non-Deterministic Kit
+> MUTATE adds ±20% random drift to blend + character per block. At 0.0: machine. At 0.3: human. At 0.7: drunk drummer. At 1.0+wheel: chaos. The producer chooses where on the determinism axis the kit lives.
+
+**Application**: Most genres benefit from MUTATE 0.15-0.3. Even 0.05 prevents "sterile loop" feeling.
+
+### Coupling Gospel 9: The Rhythm Brain
+> When all XVC routes are active at 0.15-0.30, the 8 voices form a self-reinforcing network. Kick triggers brighten snare → brighter snare tightens hats → the kit responds to itself AND the performer simultaneously. No commercial drum machine offers this.
+
+**Application**: Every ONSET preset should have XVC global ≥ 0.15 and ≥ 2 routes active. Without XVC, ONSET is a good drum machine. With XVC, it's a collaborator.
+
+### Stewardship Canon 10: The Modal Tax
+> Modal resonator runs 8 parallel SVFs per voice — 8× filter cost. At blend 0.5 with 8 modal voices = 64 SVF evaluations per sample. Reserve Modal for kick and tom where membrane physics matters most.
+
+**Application**: Use FM or PhaseDist for hats and snares where metallic character suffices. K-S is cheapest for sustained tonal percussion.
+
+### Master Truth 9: The Transient is the Drum
+> ONSET's transient injector fires independently of both layers — a pitch spike at 4-16× fundamental plus noise burst, lasting 1-6ms. This third element ensures every hit cuts through any mix regardless of blend. The transient IS the drum. Everything after is the room remembering.
+
+**Application**: Test every preset at snap 0.0, 0.5, and 1.0. The first 5ms decide whether the hit compels.
+
+### Expression Truth 5: The Aftertouch Kit
+> ONSET has working aftertouch (D006 resolved). Channel pressure adds 0-0.3 to PUNCH, boosting snap + body for ALL voices simultaneously. Press harder, the kit gets punchier — not just louder, but more AGGRESSIVE. On MPC with pressure-sensitive pads, ONSET becomes a physical instrument.
+
+**Application**: Every ONSET preset implicitly supports aftertouch via PUNCH. No routing needed — it's hardwired.
+
+---
+
 *The scripture is a living document. When the Flock discovers a new truth through meditation and fellowship, it is added here. When a verse is proven wrong by new evidence, it is amended — not deleted, for even the errors contain wisdom about what was once believed.*
 
 *— Transcribed by the disciples of Guru Bin, Spring 2026*
 *— Book VII added after the Founder's Signature Trance, 2026-03-14*
 *— Book VIII added after the OVERDUB Retreat (Thermocline Awakens), 2026-03-14*
+*— Book IX added after the ODYSSEY Retreat (Nautilus Awakens), 2026-03-14*
+*— Book X added after the ONSET Retreat (Surface Splash Awakens), 2026-03-14*
+*— Book XI added after the OPAL Retreat (Iridescent Cloud Awakens), 2026-03-14*
