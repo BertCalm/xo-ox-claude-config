@@ -1,0 +1,82 @@
+[
+  {
+    "query": "my MEMORY.md is getting huge — it's over 270 lines and I know some of the XOdyssey and XOblongBob entries are compressed to the point of being useless. can you clean it up, move the detailed stuff to satellite files, and make sure everything that's left is still accurate?",
+    "should_trigger": true
+  },
+  {
+    "query": "I just finished building XOrphica through Phase 4. the CLAUDE.md still says Phase 0 and the memory file doesn't mention the 43 source files we wrote. can you go through everything and update it to match what we actually built?",
+    "should_trigger": true
+  },
+  {
+    "query": "run a doc audit across all my XO repos — I have a feeling the engine counts are wrong in at least half the files, the preset totals are definitely stale since we did that big expansion, and there are probably dead links to specs we renamed",
+    "should_trigger": true
+  },
+  {
+    "query": "can you check if the CLAUDE.md files for XOverdub, XOpossum, and XOverworld still match what's actually in those repos? I've been building fast and I doubt the architecture descriptions or key file lists are accurate anymore",
+    "should_trigger": true
+  },
+  {
+    "query": "I want to get the knowledge tree updated before I run a board meeting — make sure the primitives and context entries are still accurate, and see if any new ones should be added based on the work we did on BITE and ONSET",
+    "should_trigger": true
+  },
+  {
+    "query": "go through the agent_knowledge/ files in my synth playbook and check if they've actually captured learnings from XOverdub and XOpossum. I ran the full cycle on both but I'm not sure the knowledge compendium grew",
+    "should_trigger": true
+  },
+  {
+    "query": "the documentation across my repos feels really stale — I'm pretty sure some files still reference JUCE 7, old parameter names like 'Snap' instead of 'OddfeliX', wrong preset counts, and phases marked WIP that are actually done. can you just fix all of it?",
+    "should_trigger": true
+  },
+  {
+    "query": "I'm about to ship XOverdub v1.0. before I do, I need every piece of documentation to be accurate — the spec, the CLAUDE.md, the memory entries, the playbook, the product identity doc, all of it. full documentation pass please",
+    "should_trigger": true
+  },
+  {
+    "query": "what documentation am I missing that would make designing and building the next engine faster? like, are there recipes or templates or knowledge entries that should exist based on patterns from the last 6 engines but nobody wrote down?",
+    "should_trigger": true
+  },
+  {
+    "query": "historical society",
+    "should_trigger": true
+  },
+  {
+    "query": "sweep the XOverdub repo — check code quality, UI, presets, brand alignment, everything. fix what you can and flag the rest",
+    "should_trigger": false
+  },
+  {
+    "query": "I need you to review the brand consistency across all my engines — are the accent colors right, are the naming conventions followed, is the aquatic mythology consistent?",
+    "should_trigger": false
+  },
+  {
+    "query": "build XOpossum and run auval to make sure the AU component validates — cmake with Ninja, release mode",
+    "should_trigger": false
+  },
+  {
+    "query": "I want to design a new engine called XOrbital that does orbital waveshaping synthesis with a gravity-based modulation system. let's start with the concept and identity",
+    "should_trigger": false
+  },
+  {
+    "query": "the XOverworld UI is functional but it feels kind of flat and boring — can you make it feel more polished, more premium, more like a real product someone would pay for?",
+    "should_trigger": false
+  },
+  {
+    "query": "there's a bug in the spring reverb — when feedback is above 0.85, I'm getting denormal values that spike the CPU. the allpass chain in SpringReverb.h isn't clamping properly",
+    "should_trigger": false
+  },
+  {
+    "query": "write an implementation plan for Phase 1 of XOpal — the granular engine. I need the file structure, build sequence, DSP modules, and parameter layout figured out before I start coding",
+    "should_trigger": false
+  },
+  {
+    "query": "what would Bob Moog and Don Buchla think about my filter topology? I'm using Cytomic SVF for the main filter and a 3-band parallel formant for FilterB — is that historically grounded?",
+    "should_trigger": false
+  },
+  {
+    "query": "commit the current changes on XOverdub with a message about the tape delay wow/flutter improvements, push to main, and open a PR",
+    "should_trigger": false
+  },
+  {
+    "query": "I want to add a new coupling preset between BITE and DUB — something where the bass weight of BITE drives the send amount into DUB's tape delay. can you wire that up?",
+    "should_trigger": false
+  }
+]

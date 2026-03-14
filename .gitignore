@@ -1,0 +1,9 @@
+# Session transcripts (large, ephemeral)
+*.jsonl
+
+# OS files
+.DS_Store
+
+# Temp files
+*.bak
+*.tmp
