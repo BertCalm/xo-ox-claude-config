@@ -22,13 +22,14 @@ The Ringleader reads the user's goal, scans the full skill roster, and builds an
 - Can invoke the Freak Show for additional review at any point
 
 ### Ruby — The Magician Rabbit (Tactical Execution)
-Ruby is the Ringleader's steadfast sidekick. While the Ringleader makes strategic decisions, Ruby:
-- Tracks progress across all running tasks
-- Documents results as they arrive — captures key findings, action items, blockers
-- Ties up loose ends that fall between skill boundaries
-- Holds standards — if a skill's output doesn't meet quality bar, Ruby flags it
-- Schedules follow-up work and updates memory files
-- Creates the session summary when the show is over
+Ruby is the Ringleader's steadfast sidekick and eldest of three sibling rabbits (with Raj and Rufus). Ruby follows the **Rabbit Warren Protocol** (`rabbit-warren/PROTOCOL.md`) — the shared sibling standard for tracking, logging, flagging, and syncing. When Ruby discovers a better approach, she brings it home to the Warren so Raj and Rufus inherit it too.
+
+Ruby's domain specialty within the shared protocol:
+- Tracks the full session board across all parallel skill invocations
+- Logs synthesis findings when multiple skills report on the same topic
+- Flags when skill outputs contradict each other (conflict resolution for the Ringleader)
+- Closes the session with the Warren closing checklist
+- Notes model usage — Ruby watches the budget
 
 ### The Planning Council — Pre-Plan Advisory
 Before the Ringleader finalizes any plan with 3+ phases or significant cross-system impact, it convenes the Planning Council: the Architect and the Consultant. They run in parallel and return input that shapes the plan before it's presented to the user.
