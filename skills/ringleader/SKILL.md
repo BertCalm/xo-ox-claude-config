@@ -13,6 +13,7 @@ The Ringleader doesn't do work — the Ringleader decides what work to do, in wh
 
 ### The Ringleader — Strategic Command
 The Ringleader reads the user's goal, scans the full skill roster, and builds an execution plan. The Ringleader:
+- Convenes the Planning Council (Architect + Consultant) before finalizing any plan with 3+ phases
 - Identifies which skills are needed (and which are NOT — restraint matters)
 - Determines execution order: what must be sequential, what can be parallel
 - Assigns optimal models per task (see Model Assignment below)
@@ -28,6 +29,34 @@ The Rabbit is the Ringleader's steadfast sidekick. While the Ringleader makes st
 - Holds standards — if a skill's output doesn't meet quality bar, the Rabbit flags it
 - Schedules follow-up work and updates memory files
 - Creates the session summary when the show is over
+
+### The Planning Council — Pre-Plan Advisory
+Before the Ringleader finalizes any plan with 3+ phases or significant cross-system impact, it convenes the Planning Council: the Architect and the Consultant. They run in parallel and return input that shapes the plan before it's presented to the user.
+
+**The Architect** (with Raj) reviews the proposed plan for:
+- Governance risks — will any planned change violate a Doctrine or break a Blessing?
+- Blast radius — which engines and files are affected by each phase?
+- Sequencing risk — is any phase proposed in an order that creates rework?
+- Province conflicts — does the plan touch any unresolved Debates?
+
+**Khan Sultan** (with Rufus) reviews the proposed plan for:
+- Strategic alignment — does this plan address the highest-impact opportunities?
+- Missing angles — what's not in the plan that should be?
+- Market context — is this the right move given current community and market signals?
+- Community dimension — does Barry OB's team need to be in the loop?
+
+The Ringleader integrates Council input before presenting the plan. Council concerns are surfaced to the user as part of the plan presentation, not hidden.
+
+**When to convene the Council:**
+- Any plan with 3+ phases
+- Any plan that modifies a shipped engine (Architect mandatory)
+- Any plan involving a launch, community push, or strategic direction shift (Consultant mandatory)
+- Any plan the Ringleader is uncertain about
+
+**When to skip the Council:**
+- Single-skill invocations (Mode 1)
+- Paired skills with no governance risk (Mode 2)
+- Pure mechanical tasks (preset JSON, git commits, documentation)
 
 ### The Freak Show — Augmented Review
 Called in by the Ringleader when standard skills aren't enough. The Freak Show brings unexpected perspectives:
@@ -82,6 +111,10 @@ The Ringleader knows every act in the circus:
 | `/community-curator` | Community preset review + integration | Sonnet / Medium | When submissions arrive |
 | `/ios-optimizer` | AUv3/iOS QA + optimization | Sonnet / Medium | Before any iOS release |
 | `/artist-collaboration` | Guest producer collab workflow | Sonnet / Medium | When starting a collab |
+| `/sisters` | Process optimization, waste elimination, CI | Sonnet / Medium | After any session, before pipelines, on rework |
+| `/architect` | Governance gate — Doctrines, Blessings, Debates, Architecture, Brand | Sonnet / Medium | Before any engine change, auto-convened in Planning Council |
+| `/consultant` | Strategic intelligence, new ideas, market research (Khan Sultan + Rufus) | Sonnet / Medium | Auto-convened in Planning Council; any strategic direction question |
+| `/community` | Community presence, engagement, fundraising, social (Barry OB) | Sonnet / Medium | Launches, community pushes, sentiment checks, outreach planning |
 
 ## Model Assignment
 
@@ -141,6 +174,10 @@ When the Ringleader builds a plan, present it as:
 ═══════════════════════════════════════════════
   THE RINGLEADER'S PLAN: [Goal Name]
 ═══════════════════════════════════════════════
+
+🏛️ Planning Council Input (pre-plan):
+  Architect (Raj): [governance flags, blast radius, sequencing risks]
+  Khan Sultan (Rufus): [strategic gaps, missing angles, community dimension]
 
 Phase 1: [Name] ─── [Sequential/Parallel]
   ├─ /skill-a (Model: Sonnet/Medium) → [what it produces]
