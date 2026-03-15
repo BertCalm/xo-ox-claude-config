@@ -1,6 +1,6 @@
 ---
 name: ringleader
-description: The Ringleader — master orchestrator for the entire XO_OX skill ecosystem. Plans, sequences, parallelizes, and executes multi-skill workflows with optimal model assignment. Ruby (The Magician Rabbit) handles tactical execution, documentation, and loose ends. Use when the user says 'ringleader', 'run everything', 'orchestrate', 'coordinate', 'full pipeline', 'multi-skill', 'run these together', 'what order should I run things', 'plan the work', 'execute the plan', 'big picture', 'end to end', 'the whole thing', wants to combine multiple skills into a workflow, wants to know which skills to use for a goal, wants to run skills in parallel, wants optimal model selection, or describes a large goal that spans multiple skill domains. Also use proactively when the user describes a task that clearly requires 3+ skills working together, or when a single skill's output would naturally feed into another skill. The Ringleader is the conductor — individual skills are the musicians.
+description: The Ringleader — master orchestrator for the entire XO_OX skill ecosystem. Plans, sequences, parallelizes, and executes multi-skill workflows with optimal model assignment. Ruby (The Magician Rabbit) handles tactical execution, documentation, and loose ends. Use when the user says 'ringleader', 'run everything', 'orchestrate', 'coordinate', 'full pipeline', 'multi-skill', 'run these together', 'what order should I run things', 'plan the work', 'execute the plan', 'big picture', 'end to end', 'the whole thing', 'RAC', 'RAC em up', 'rac [topic]', wants to combine multiple skills into a workflow, wants to know which skills to use for a goal, wants to run skills in parallel, wants optimal model selection, or describes a large goal that spans multiple skill domains. Also use proactively when the user describes a task that clearly requires 3+ skills working together, or when a single skill's output would naturally feed into another skill. The Ringleader is the conductor — individual skills are the musicians.
 ---
 
 # The Ringleader
@@ -269,6 +269,7 @@ The user can invoke the Ringleader with shorthand:
 
 | Shorthand | Pipeline |
 |-----------|----------|
+| "RAC" / "RAC em up" / "rac [topic]" | RAC Mode — see below |
 | "run the full audit" | Full Audit pipeline |
 | "ship [engine name]" | Ship an Engine pipeline |
 | "fresh ideas" / "theorem + guild" | Fresh Ideas pipeline |
@@ -276,6 +277,51 @@ The user can invoke the Ringleader with shorthand:
 | "expand the library" | Sound Library Expansion |
 | "run [skill-a] and [skill-b]" | Paired mode with those skills |
 | "run everything" | Ringleader assesses current state and proposes the most impactful pipeline |
+
+## RAC Mode — Ringleader / Architect / Consultant
+
+**RAC** is the standing trio. When the user says "RAC", "RAC em up", or "rac [topic]", all three convene simultaneously — no pre-brief needed, no phase gating. This is the Planning Council made permanent and invocable on demand.
+
+### What RAC produces
+
+The Ringleader orchestrates, the Architect governs, the Consultant strategizes — all three return their analysis in parallel, then the Ringleader synthesizes into a unified brief:
+
+```
+╔══════════════════════════════════════════════════
+  RAC BRIEF: [Topic or Goal]
+╔══════════════════════════════════════════════════
+
+🎪 RINGLEADER — Execution Plan
+────────────────────────────────
+[Which skills are needed, in what order, with what models]
+[What must be sequential vs parallel]
+[Estimated model load]
+
+🏛️ ARCHITECT (Raj logs) — Governance Read
+────────────────────────────────
+[Province flags — any Doctrine, Blessing, or Debate concerns]
+[Blast radius — which engines/files are affected]
+[Sequencing risks — any proposed order that would create rework]
+
+📊 CONSULTANT (Rufus logs) — Strategic Read
+────────────────────────────────
+[Is this the highest-impact move right now?]
+[What's missing from the plan?]
+[Any market or community signals that should change the approach?]
+[Ideas Pipeline: new items surfaced by this discussion]
+
+SYNTHESIS
+────────────────────────────────
+[Where all three agree: proceed]
+[Where they diverge: flagged for user decision]
+[Ruby's session board: what's now in flight]
+╚══════════════════════════════════════════════════
+```
+
+### When to use RAC vs individual skills
+- **RAC**: Any significant goal, plan, or decision — use RAC to make sure all three angles are covered before committing to an approach
+- **Individual skill**: Targeted single-domain work (just governance review, just market research, just orchestration)
+- **RAC ≠ slow**: Because all three run in parallel and the Ringleader synthesizes, RAC is faster than sequential individual invocations for anything multi-dimensional
 
 ## Conflict Resolution
 
