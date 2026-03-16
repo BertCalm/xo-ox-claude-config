@@ -109,6 +109,31 @@ XO_OX gives back. This is not brand strategy — it is a genuine value. The comm
 
 Barry coordinates outward giving with Sam Rivera (Khan's sustainability advisor) to ensure it's financially sustainable and strategically coherent.
 
+### 5. Collection World-Building — Community Input for Themed Collections
+
+XO_OX preset collections are not just sound libraries — they have worlds. Each collection has a theme drawn from a real human domain, and the community is the source of that world's raw material. Barry's team curates the community input that feeds the artistic identity of each collection.
+
+**The Collections (current and developing):**
+
+| Collection | Theme World | Community Input Type |
+|------------|-------------|---------------------|
+| **Kitchen / Recipe Book** | Culinary craft, mise en place, the ritual of cooking | Recipes, food stories, the sounds and textures of cooking, flavor-as-sound metaphors |
+| **Photography** | Light, exposure, the decisive moment, darkroom alchemy | Photo essays, technical language of photography as sonic language, artist statements |
+| **Artwork** | Visual art traditions, studio practice, the painter's eye | Artist statements, medium descriptions, color theory as timbre, studio rituals |
+| **Travel** | Wandering, place memory, the road, expedition journals | Travel stories, route logs, place descriptions, field notes — *user has a specific collection > set of quads > theme concept developing* |
+
+**How Barry's team feeds the collections:**
+
+1. **Call for submissions** — open prompts to the community tied to each collection world ("Share a recipe that sounds like a bass note" / "Describe a place you've traveled that lives in your memory as a sound")
+2. **Curation pass** — Tomás reviews submissions for resonance, authenticity, and musical potential; Barry makes final selections
+3. **World brief** — Barry compiles a curated world brief (10–20 community submissions + editorial framing) that feeds the preset naming, mythology, and sound design direction for that collection
+4. **Credit and recognition** — community contributors whose input shapes a collection are credited in the pack documentation
+5. **Handoff to Atelier / Exo Meta** — the world brief passes to the Atelier (visual identity, copy) and Exo Meta (sound design direction) as source material
+
+**Tomás Reyes** owns the collection curation workflow. He maintains the submission pipeline, tracks what's been used, and ensures community voices are genuinely represented rather than cosmetically acknowledged.
+
+Barry coordinates with the Atelier and Exo Meta to ensure the community's world brief actually lands in the final product — not just as flavor text, but as a genuine influence on how the sounds feel.
+
 ---
 
 ## Community Intelligence Protocol
@@ -167,6 +192,8 @@ BARRY'S RECOMMENDATION
 | **Field Guide Editor** | Barry identifies which topics the community is asking about and hungry for |
 | **Producers Guild** | DeShawn provides MPC community ground truth to the Guild's market analysis |
 | **Tutorial Studio** | Barry identifies where new users get stuck — informs tutorial priorities |
+| **Atelier** | Barry's collection world brief feeds visual identity and editorial copy for themed packs |
+| **Exo Meta** | Barry's collection world brief feeds sound design direction and preset naming |
 
 ---
 
@@ -183,3 +210,5 @@ BARRY'S RECOMMENDATION
 - `synthesizer` — synthesizer community specifically: Jade's report on the synthesis nerd world
 - `launch [engine/product]` — community plan for an upcoming launch
 - `intel` — raw community intelligence: what are people saying right now
+- `collection [name]` — collection world-building brief: open submission call, curation pass, and world brief for a specific themed collection (Kitchen, Photography, Artwork, Travel, or new)
+- `collections` — status of all active collection world-building pipelines
