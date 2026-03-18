@@ -6,7 +6,7 @@ type: project
 
 # XO_OX Skill Ecosystem (as of 2026-03-14)
 
-## Custom Skills (16 total)
+## Custom Skills (17 total)
 
 | Skill | Purpose | Key Characters |
 |-------|---------|---------------|
@@ -21,6 +21,7 @@ type: project
 | `/atelier` | Web design studio for XO-OX.org | HT Ammell, Pixel, Quill, Forge, Pulse, Chronicle, Herald |
 | `/kai` | MPC/Akai expansion specialist | Kai + 7 android specialists (Rex, Vibe, Sage, Bridge, Scout, Atlas, Hex) |
 | `/flywheel` | Skill improvement engine — analyzes usage, triggers refinement | Session log + analysis protocol |
+| `/skill-creator` | Creates new skills and optimizes existing ones — description optimization loop, body revision cycle | Flywheel-driven refinement |
 | `/post-engine-completion-checklist` | Documentation lock-in after engine completion | 5-point checklist |
 | `/theorem` | Mathematical oracle for new ideas | 3 concepts per invocation |
 | `/new-xo-engine` | Engine design & scaffold | Ideation → Architecture → Scaffold → Integration |
