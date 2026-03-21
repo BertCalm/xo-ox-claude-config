@@ -1,3 +1,8 @@
+---
+name: model-advisor
+description: Model Advisor — analyzes the current task and recommends the optimal Claude model and effort level for cost-effective execution. Use when the user says 'model advisor', 'which model should I use', 'what model for this', 'am I on the right model', 'cost check', 'model check', 'effort level', 'should I use opus or sonnet', wants to optimize model spend before starting a task, is switching from design to implementation and wants a downgrade recommendation, or mentions usage limits. Also invoke proactively at the start of any session when the work type is unclear, and whenever the task type shifts significantly.
+---
+
 # Model Advisor
 
 Analyze the current task and recommend the optimal Claude model + effort level.

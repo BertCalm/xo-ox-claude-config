@@ -5,7 +5,7 @@ description: Fleet Inspector — comprehensive cross-engine health dashboard for
 
 # Fleet Inspector
 
-**The dashboard that sees all 27 engines at once.**
+**The dashboard that sees all 50 engines at once.**
 
 The XOmnibus fleet is large enough that no one holds its full state in their head. The Fleet Inspector dispatches parallel agents to read every engine's source, presets, and documentation simultaneously, then synthesizes a single health report that shows exactly where the fleet stands — and where it needs work.
 
@@ -39,6 +39,7 @@ For each engine in the fleet, the Inspector gathers:
 ### Doctrine Compliance
 - D001: velocity shapes timbre (any velocity-to-filter wiring in source?)
 - D002: modulation present (LFO count ≥ 2, macro count = 4)
+- D003: param IDs frozen on ship (no ID changes in shipped engines — check against last-known-good state)
 - D004: no dead parameters (from historical seance/sweep findings)
 - D005: breathing LFO (rate floor ≤ 0.01 Hz confirmed?)
 - D006: aftertouch + mod wheel wired (from fleet tracking in CLAUDE.md)
@@ -62,7 +63,7 @@ For each engine in the fleet, the Inspector gathers:
 
 Presets:      {total} across {N} engines (avg {N}/engine)
 Params:       {total} tracked parameters (avg {N}/engine)
-Doctrines:    D001 ✅  D002 ✅  D004 ✅  D005 ✅  D006 ✅
+Doctrines:    D001 ✅  D002 ✅  D003 ✅  D004 ✅  D005 ✅  D006 ✅
 Retreats:     {N}/{total} engines have retreat chapters
 Build:        {N}/{total} engines confirmed building
 
@@ -96,7 +97,7 @@ Legend: 🟢 OK (≥40 presets, 6 moods, all doctrines, retreat done)
 {list of engines with no retreat chapter}
 
 ### Doctrine Gaps:
-{list any remaining D001/D002/D004/D005/D006 failures}
+{list any remaining D001/D002/D003/D004/D005/D006 failures}
 
 ## RECOMMENDED PRIORITIES
 
@@ -156,6 +157,6 @@ Runs the inspection on two engines side-by-side — useful when choosing which t
 
 ## Execution Model
 
-The Inspector dispatches parallel subagents — one per engine — each reading that engine's files independently. Results are streamed back and aggregated into the final report. This means even a 27-engine fleet scan completes in the time it takes to read the slowest engine, not the sum of all reading times.
+The Inspector dispatches parallel subagents — one per engine — each reading that engine's files independently. Results are streamed back and aggregated into the final report. This means even a 50-engine fleet scan completes in the time it takes to read the slowest engine, not the sum of all reading times.
 
-For large fleets (31+ engines when concept engines are implemented), the Inspector batches subagents in groups of 8 to avoid overloading the context budget.
+For large fleets (50+ engines at current scale), the Inspector batches subagents in groups of 8 to avoid overloading the context budget.

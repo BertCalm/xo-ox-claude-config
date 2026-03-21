@@ -45,22 +45,12 @@ Each engine maps to an aquatic creature that embodies its synthesis character:
 
 ## Existing Engine Mythology
 
-Read the full atlas from `~/.claude/projects/-Users-joshuacramblet/memory/aquatic-mythology.md`.
+Read the full atlas from the canonical source — whichever of these exists:
 
-Brief summary of mapped engines (always verify against the full file):
+1. `~/Documents/GitHub/XO_OX-XOmnibus/Docs/aquatic-mythology.md` (primary — repo copy, always most current)
+2. `~/.claude/projects/-Users-joshuacramblet/memory/aquatic-mythology.md` (session memory fallback)
 
-| Engine | Creature | Depth Zone | Polarity |
-|--------|----------|------------|----------|
-| OVERDUB | Sea turtle with tape-echo shell | Twilight | Oscar-leaning |
-| ODYSSEY | Manta ray in migratory drift | Midnight | Oscar |
-| BOB | Tide pool ecosystem | Surface | Balanced |
-| SNAP | Pistol shrimp | Surface | feliX |
-| MORPH | Cuttlefish | Twilight | Balanced |
-| FAT | Whale shark | Midnight | Oscar |
-| ONSET | Mantis shrimp | Surface | feliX |
-| OVERWORLD | Electric eel / chip-lit waters | Surface | feliX |
-| OPAL | Portuguese man o' war | Twilight | Balanced |
-| BITE (POSSUM) | Deep-sea isopod | Midnight | Oscar |
+The canonical list covers all 45+ engines with full identity cards. Do NOT rely on any inline table in this skill file — the fleet grows faster than this file is updated. Always read the canonical source before checking for conflicts or assigning new mythology.
 
 ---
 

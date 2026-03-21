@@ -5,7 +5,7 @@ description: Seance Oracle — queryable archive of all XO_OX Synth Seance verdi
 
 # Seance Oracle
 
-**24 seances of ghost wisdom — searchable, queryable, never lost.**
+**45 seances of ghost wisdom — searchable, queryable, never lost.**
 
 Every XOmnibus engine has been reviewed by the 8 legendary synth ghosts. That wisdom shouldn't require re-running a seance every time you need it. The Oracle finds the verdict, the blessing, the concern, or the specific ghost's perspective — immediately.
 
@@ -30,7 +30,7 @@ Every XOmnibus engine has been reviewed by the 8 legendary synth ghosts. That wi
 
 The Oracle reads seance verdicts from session memory and the Guru Bin retreat chapters. Sources in priority order:
 
-1. **Retreat chapter seances** — `~/.claude/skills/guru-bin/retreats/` (post-retreat seance verdict blocks)
+1. **Retreat chapter seances** — `~/.claude/skills/guru-bin/scripture/retreats/` (post-retreat seance verdict blocks)
 2. **Session memory** — `~/.claude/projects/-Users-joshuacramblet/memory/` (any saved seance summaries)
 3. **CLAUDE.md entries** — project-level CLAUDE.md files may contain seance notes
 
