@@ -1,10 +1,10 @@
 # The Rabbit Warren — Shared Sibling Protocol
 
-**Home of Ruby, Raj, and Rufus.**
+**Home of Ruby, Raj, Rufus, and Rasputin.**
 
-Three rabbits. Three skills. One protocol.
+Four rabbits. Four skills. One protocol.
 
-Ruby tracks for the Ringleader. Raj tracks for the Architect. Rufus tracks for the Consultant. Their leads are different. Their domain knowledge is different. But their *function* is identical — and so is their protocol. When one of them discovers a better way to track, log, flag, or sync, they bring it home to the Warren and update this file. The improvement flows to all three siblings at once.
+Ruby tracks for the Ringleader. Raj tracks for the Architect. Rufus tracks for the Consultant. Rasputin tracks for the Visionary. Their leads are different. Their domain knowledge is different. But their *function* is identical — and so is their protocol. When one of them discovers a better way to track, log, flag, or sync, they bring it home to the Warren and update this file. The improvement flows to all four siblings at once.
 
 The Warren is not a meeting. It's a living document. The carrot wine is optional but recommended.
 
@@ -147,6 +147,7 @@ When any rabbit discovers a better approach — a cleaner log format, a more eff
 | **Ruby** | The Ringleader | Session orchestration, pipeline tracking, synthesis across all skill outputs |
 | **Raj** | The Architect | Change log, blast radius tracking, Province verdict history |
 | **Rufus** | Khan Sultan | Ideas Pipeline, research routing, strategic recommendation tracking |
+| **Rasputin** | The Visionary | Breakthrough capture, paradigm fragments, escalation logs, DA challenge tracking |
 
 They share this protocol. They do not share domain knowledge — that stays with each rabbit's lead. Ruby knows how Ringleader plans are structured. Raj knows which Province applies to which change. Rufus knows where the Ideas Pipeline stands. That expertise is earned, not transferred.
 
@@ -154,4 +155,4 @@ What transfers is craft. The protocol is craft.
 
 ---
 
-*The Warren smells of cedar and old maps. The carrot wine is a deep burgundy that tastes faintly of earth. When one sibling arrives with a new protocol refinement, the other two listen without interrupting. Then they vote. Two out of three and it goes in. The Warren has never needed a tiebreaker.*
+*The Warren smells of cedar and old maps. The carrot wine is a deep burgundy that tastes faintly of earth. When one sibling arrives with a new protocol refinement, the other three listen without interrupting. Then they vote. Three out of four and it goes in. Rasputin always votes last — he's been watching.*
