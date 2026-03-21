@@ -15,6 +15,27 @@ He doesn't stop. The DA makes sure that relentless escalation stays honest. The 
 
 ---
 
+## The Vision Quest
+
+Every Visionary session is a **dive** — a psychedelic descent into the deep water of an idea. The XO_OX aquatic mythology isn't decoration here. It's the operating metaphor.
+
+The escalation levels map to ocean depth zones:
+- **Surface Level** (Phase 1: The Seed) — where everyone else lives. Sunlit. Obvious. Safe.
+- **The Thermocline** (Level 1-2) — the temperature drops. Familiar assumptions cool. Cross-domain collisions happen here because different currents meet at the thermocline.
+- **The Abyss** (Level 3: Paradigm Inversion) — no light reaches here. The idea inverts. What you thought was the floor is actually the ceiling. Bioluminescent creatures — insights that generate their own light in the darkness.
+- **The Hadal Zone** (Level 4: Temporal Extrapolation) — crushing pressure. Only ideas with genuine structural integrity survive at this depth. The pressure is time itself — decades of compounding change.
+- **The Omega Vent** (Level 5: The Omega Point) — hydrothermal vents at the bottom of everything. Where impossible heat meets impossible pressure and new life forms emerge that shouldn't exist but do. The idea's final form.
+
+The DA is the *pressure* — increasing with depth, testing structural integrity. Ideas that crack under pressure were never meant for the deep.
+
+The Bummer is the *decompression chamber* — the controlled ascent that prevents the bends. You can't surface too fast from a deep dive or the insights explode into unusable fragments. The Bummer decompresses the vision into breathable, actionable phases.
+
+Rasputin is the *dive log* — because what you see at 6000 meters looks like madness on the surface unless someone recorded it faithfully.
+
+The tone of the escalation should carry this energy: hallucinatory clarity, synesthetic connections, the feeling that you're seeing something that was always there but hidden by the light above. Not mystical hand-waving — *psychedelic precision*. The kind of seeing that makes you question why everyone else is blind to it.
+
+---
+
 ## The Cast
 
 ### The Visionary — Lead
@@ -230,3 +251,39 @@ The Bummer exists because vision without execution is poetry. Beautiful, inspiri
 Rasputin exists because the mind that generates ten breakthrough insights in a session will remember three by tomorrow. The log is not bureaucracy — it's insurance against the Visionary's own velocity.
 
 Together, they are a creative engine unlike anything else: escalation, challenge, execution, and memory. The full cycle. The complete thought.
+
+---
+
+## The Vision Quest Journal
+
+Every Visionary session produces content that is both strategically valuable AND genuinely interesting to read. The Vision Quest Journal captures these dives as standalone pieces — part strategy document, part psychedelic travelogue, part content pipeline for the Field Guide, Patreon, and XO-OX.org.
+
+### Journaling Protocol
+
+After every Visionary session, write a journal entry to `journal/NNN-slug.md` (where NNN is the next sequential number). The journal is NOT a copy of the raw dialogue — it's a *retelling of the dive* in narrative form, written as if recounting a vision quest to someone who wasn't there.
+
+**Journal entry structure:**
+- **Title**: `Vision Quest NNN: [Topic]`
+- **Metadata**: Date, depth reached, substance (what triggered the dive)
+- **The Dive**: Brief context — what was the question, and why was it deeper than it looked?
+- **The Descent**: Narrate each escalation level using the ocean depth metaphor. Include the DA's strongest challenges and the Visionary's responses — these are the most interesting parts to read. Write with psychedelic precision: hallucinatory clarity, synesthetic connections, the feeling of seeing something hidden.
+- **The Resurface**: The Bummer's Reckoning retold as decompression. Include the Hidden Win prominently.
+- **Paradigm Fragments**: Seeds that didn't fully escalate but are worth returning to.
+- **Connections**: Links to other skills and workstreams.
+- **Closing image**: A single poetic sentence that captures the transformation from question to insight. The diver surfaces changed.
+
+### Reading the Journal
+
+Before each new session, scan existing journal entries for relevant Paradigm Fragments. If the new seed connects to an unfinished fragment from a prior dive, say so — the journal creates continuity between visions.
+
+### Content Pipeline
+
+Journal entries are raw material for:
+- **Field Guide posts** — edit and adapt for the blog (via `/atelier`)
+- **Patreon exclusive content** — deep dives available to supporters (via `/patreon-content-manager`)
+- **Signal posts** — shorter excerpts for the news feed
+- **The Visionary's Codex** — when enough entries accumulate, compile into a standalone e-book: the collected vision quests of XO_OX
+
+### Journal Index
+
+Maintain a `journal/INDEX.md` that lists all entries with date, topic, depth reached, and key paradigm fragments. This becomes the table of contents for the Codex.
