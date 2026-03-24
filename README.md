@@ -5,7 +5,7 @@ Claude Code skills, memory, and configuration for the XO_OX Designs ecosystem.
 ## Structure
 
 ```
-skills/          — Custom Claude Code skills (17 skills)
+skills/          — Custom Claude Code skills (18 skills)
 memory/          — Persistent memory files (MEMORY.md + satellites)
 hookify/         — Hookify rules (flywheel logging, etc.)
 ```
@@ -31,6 +31,7 @@ hookify/         — Hookify rules (flywheel logging, etc.)
 | `/new-xo-engine` | Engine scaffold |
 | `/new-xo-project` | JUCE project scaffold |
 | `/model-advisor` | Model/effort routing |
+| `/skill-creator` | Adaptive skill builder |
 
 ## Guru Bin Scripture
 
