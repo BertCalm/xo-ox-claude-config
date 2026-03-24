@@ -10,6 +10,9 @@ Usage:
     python render.py ./specs/ -o ./out --spritesheet --group-by-zone
     python render.py creature.json --only-variant fire
     python render.py creature.json --add-variant "neon A=#00ff00,B=#ff00ff"
+    python render.py ./specs/ -o ./out --atlas
+    python render.py ./specs/ -o ./out --atlas --atlas-columns 16
+    python render.py ./specs/ -o ./out --atlas --spritesheet
 """
 
 import argparse
@@ -128,6 +131,181 @@ def create_spritesheet(
         sheet.paste(img, (x, y), img)
 
     return sheet
+
+
+# ---------------------------------------------------------------------------
+# Atlas assembly
+# ---------------------------------------------------------------------------
+
+def create_atlas(
+    images: list[Image.Image],
+    columns: int = 12,
+    padding: int = 1,
+) -> tuple[Image.Image, list[tuple[int, int]]]:
+    """
+    Arrange *images* into a row-major grid atlas with *columns* columns and
+    1-pixel transparent padding between cells.
+
+    Unlike create_spritesheet, this function also returns the (col, row)
+    position of every cell so callers can build a coordinate map.
+
+    All images must have the same dimensions.  If the list is empty, a 1×1
+    transparent image is returned with an empty position list.
+
+    Returns
+    -------
+    (atlas_image, positions)
+        atlas_image — RGBA PIL Image with transparent background.
+        positions   — List of (col, row) int tuples, one per input image,
+                      in the same order as *images*.
+    """
+    if not images:
+        return Image.new("RGBA", (1, 1), (0, 0, 0, 0)), []
+
+    cell_w, cell_h = images[0].size
+    rows = (len(images) + columns - 1) // columns
+
+    # Padding sits between cells (and outside the border).
+    # Layout: pad | cell | pad | cell | pad …
+    atlas_w = columns * cell_w + (columns + 1) * padding
+    atlas_h = rows * cell_h + (rows + 1) * padding
+    atlas = Image.new("RGBA", (atlas_w, atlas_h), (0, 0, 0, 0))
+
+    positions: list[tuple[int, int]] = []
+    for idx, img in enumerate(images):
+        col = idx % columns
+        row = idx // columns
+        x = padding + col * (cell_w + padding)
+        y = padding + row * (cell_h + padding)
+        atlas.paste(img, (x, y), img)
+        positions.append((col, row))
+
+    return atlas, positions
+
+
+def build_atlases(
+    manifest_entries: list[dict],
+    specs_by_name: dict[str, dict],
+    output_dir: Path,
+    columns: int,
+) -> tuple[list[dict], dict]:
+    """
+    Build texture atlas PNGs and a shared atlas_map.json from
+    *manifest_entries*.
+
+    Only base-variant, native-size images are included.  Creatures are
+    sorted by engine number (ascending), then by name, matching the order
+    produced by collect_specs.
+
+    Parameters
+    ----------
+    manifest_entries:
+        All per-creature manifest entries produced by render_creature().
+    specs_by_name:
+        Mapping of creature name → parsed spec dict, used to look up engine
+        numbers for sorting.
+    output_dir:
+        Directory where atlas PNGs and atlas_map.json are written.
+    columns:
+        Number of columns in each atlas grid.
+
+    Returns
+    -------
+    (atlas_manifest_entries, atlas_map)
+        atlas_manifest_entries — list of dicts for manifest.json
+        atlas_map              — dict written to atlas_map.json
+    """
+
+    def _engine_sort_key(entry: dict) -> tuple[int, str]:
+        engine = entry.get("engine", "") or ""
+        match = re.search(r"(\d+)$", engine)
+        num = int(match.group(1)) if match else 9999
+        return (num, entry.get("name", ""))
+
+    # Gather only base-variant entries; one entry per (name, size) pair.
+    base_entries = [e for e in manifest_entries if e["variant"] == "base"]
+
+    atlas_manifest_entries: list[dict] = []
+    # atlas_map is keyed by size; creatures list is shared across sizes once
+    # ordering is established.  We build per-size and merge at the end.
+    per_size_data: dict[int, dict] = {}  # size → {creatures: {...}, atlas_path, ...}
+
+    for size in GRID_SIZES:
+        sized = [e for e in base_entries if e["width"] == size and e["height"] == size]
+        if not sized:
+            continue
+
+        # Sort by engine number, then name
+        sized.sort(key=_engine_sort_key)
+
+        images = [Image.open(e["file"]).convert("RGBA") for e in sized]
+        atlas, positions = create_atlas(images, columns=columns, padding=1)
+
+        atlas_filename = f"atlas_{size}x{size}.png"
+        atlas_path = output_dir / atlas_filename
+        atlas.save(atlas_path)
+
+        # Build creature coordinate map for this size
+        creatures_map: dict[str, dict] = {}
+        for entry, (col, row) in zip(sized, positions):
+            cname = entry["name"]
+            creatures_map[cname] = {
+                "col": col,
+                "row": row,
+                "engine": entry.get("engine"),
+                "index": list(creatures_map).index(cname) if cname in creatures_map else len(creatures_map),
+            }
+        # Re-derive index cleanly (dict insertion order is stable in Python 3.7+)
+        for idx, cname in enumerate(creatures_map):
+            creatures_map[cname]["index"] = idx
+
+        per_size_data[size] = {
+            "atlas_path": atlas_path,
+            "atlas": atlas,
+            "creatures_map": creatures_map,
+            "count": len(sized),
+        }
+
+        atlas_manifest_entries.append({
+            "type": "atlas",
+            "cell_size": size,
+            "columns": columns,
+            "rows": (len(sized) + columns - 1) // columns,
+            "width": atlas.width,
+            "height": atlas.height,
+            "count": len(sized),
+            "file": str(atlas_path),
+        })
+
+        print(
+            f"  atlas {size}×{size}: {atlas.width}×{atlas.height}px, "
+            f"{len(sized)} creature(s) → {atlas_path}"
+        )
+
+    # Write atlas_map.json — one entry per size, shared creature ordering
+    # comes from the smallest size (if available), else the first size found.
+    atlas_map: dict = {}
+    for size in GRID_SIZES:
+        if size not in per_size_data:
+            continue
+        data = per_size_data[size]
+        cell_pad = 1
+        atlas_map[f"{size}x{size}"] = {
+            "cell_size": size,
+            "padding": cell_pad,
+            "columns": columns,
+            "rows": (data["count"] + columns - 1) // columns,
+            "atlas_width": data["atlas"].width,
+            "atlas_height": data["atlas"].height,
+            "creatures": data["creatures_map"],
+        }
+
+    map_path = output_dir / "atlas_map.json"
+    with open(map_path, "w", encoding="utf-8") as fh:
+        json.dump(atlas_map, fh, indent=2)
+    print(f"  atlas map → {map_path}")
+
+    return atlas_manifest_entries, atlas_map
 
 
 # ---------------------------------------------------------------------------
@@ -488,6 +666,22 @@ def main() -> None:
         action="store_true",
         help="Generate separate sprite sheets per zone (implies --spritesheet).",
     )
+    parser.add_argument(
+        "--atlas",
+        action="store_true",
+        help=(
+            "Generate texture atlas PNGs (atlas_16x16.png, atlas_32x32.png) "
+            "and atlas_map.json.  Creatures are sorted by engine number.  "
+            "Only base palette is included; compatible with --spritesheet."
+        ),
+    )
+    parser.add_argument(
+        "--atlas-columns",
+        type=int,
+        default=12,
+        metavar="N",
+        help="Number of columns in the atlas grid (default: 12).",
+    )
 
     args = parser.parse_args()
 
@@ -513,6 +707,9 @@ def main() -> None:
         sys.exit("[warn] No matching specs found.")
 
     print(f"Rendering {len(specs)} creature(s) → {output_dir}")
+
+    # Build a name→spec lookup for atlas sorting
+    specs_by_name: dict[str, dict] = {spec.get("name", p.stem): spec for p, spec in specs}
 
     all_manifest_entries: list[dict] = []
 
@@ -545,12 +742,24 @@ def main() -> None:
                 f"({se['count']} sprites) → {se['file']}"
             )
 
+    # Texture atlases
+    atlas_entries: list[dict] = []
+    if args.atlas:
+        print("Building texture atlases…")
+        atlas_entries, _ = build_atlases(
+            all_manifest_entries,
+            specs_by_name,
+            output_dir,
+            columns=args.atlas_columns,
+        )
+
     # Write manifest.json
     manifest = {
         "generated_at": datetime.utcnow().isoformat() + "Z",
         "total_files": len(all_manifest_entries),
         "creatures": all_manifest_entries,
         "spritesheets": sheet_entries,
+        "atlases": atlas_entries,
     }
     manifest_path = output_dir / "manifest.json"
     with open(manifest_path, "w", encoding="utf-8") as fh:
