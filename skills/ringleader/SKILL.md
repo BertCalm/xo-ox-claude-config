@@ -116,6 +116,7 @@ The Ringleader knows every act in the circus:
 | `/architect` | Governance gate — Doctrines, Blessings, Debates, Architecture, Brand | Sonnet / Medium | Before any engine change, auto-convened in Planning Council |
 | `/consultant` | Strategic intelligence, new ideas, market research (Khan Sultan + Rufus) | Sonnet / Medium | Auto-convened in Planning Council; any strategic direction question |
 | `/community` | Community presence, engagement, fundraising, social (Barry OB) | Sonnet / Medium | Launches, community pushes, sentiment checks, outreach planning |
+| `/skill-creator` | Adaptive skill builder — creates, refines, optimizes skills | Sonnet / Medium | After Flywheel report, when new skill needed |
 
 ## Model Assignment
 

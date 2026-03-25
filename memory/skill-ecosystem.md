@@ -26,6 +26,7 @@ type: project
 | `/new-xo-engine` | Engine design & scaffold | Ideation → Architecture → Scaffold → Integration |
 | `/new-xo-project` | JUCE 8 project scaffold | CMake + Ninja template |
 | `/model-advisor` | Model/effort recommendation | Opus vs Sonnet routing |
+| `/skill-creator` | Adaptive skill builder — creates, refines, and evolves skills from Flywheel data | Ada (Architect of Skills), Evo (Optimizer) |
 
 ## Key Workflows
 
@@ -49,7 +50,7 @@ Engine built → /post-engine-completion-checklist →
 ```
 Any skill runs → flywheel hook logs it →
   /flywheel analyzes accumulated data →
-    /skill-creator improves underperforming skills
+    /skill-creator creates new skills or refines underperforming ones
 ```
 
 ## Guru Bin Scripture
